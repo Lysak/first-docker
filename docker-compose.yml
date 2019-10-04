@@ -4,6 +4,8 @@ services:
 
   nginx:
     image: nginx
+    ports:
+      - 8088:80
     environment:
       - VIRTUAL_HOST=site.local
     depends_on:
